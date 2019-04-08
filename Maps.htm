@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-33230608-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-33230608-1');
+</script>
+<script src="http://maps.google.com/maps?file=api&amp;v=1&amp;key=ABQIAAAAycm3x7LeysBouTVjjzp1uRT66gaSRlCo5Vi1QcDyH37DUzHnoRQ1idxLULnhBZjSFDV7Q17AtOx4Cg" type="text/javascript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-us"><title>Travel Details</title><!--#include file="include/GoogleAnalytics.htm"--></head>
+<body onload="moveMap(-90.1,30.25,7);" style="background-image: url(images/strbkgde.gif);">
+<table width="750">
+<tbody>
+<tr>
+<td align="center" width="125"> <img src="images/Flower.gif" border="0" height="115" width="125"></td>
+<td colspan="2" align="center">
+<table bgcolor="#e2e7de" border="0" cellpadding="2" cellspacing="2" height="115" width="100%">
+<tbody>
+<tr>
+<td>
+<p align="center"> <font color="#526949" face="Monotype Corsiva" size="7">Area Maps</font><font color="#526949" face="Cataneo BT" size="5"><br>
+</font><font color="#526949" face="Monotype Corsiva" size="5">Robyn and Dan's
+Wedding</font></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td rowspan="4" valign="top" width="125">
+<table id="table1" bgcolor="#e2e7de" border="0" cellpadding="0" cellspacing="0" width="125">
+<tbody>
+<tr>
+<td align="center" width="150"> <font color="#526949" face="Monotype Corsiva" size="4">
+<a href="default.htm"><font color="#526949"><span style="text-decoration: none;">Home</span></font></a></font>
+<p> <font color="#526949" face="Monotype Corsiva" size="4"> <a href="AboutUs.htm"><font color="#526949"> <span style="text-decoration: none;">About Us</span></font></a></font></p>
+<p> <font color="#526949" face="Monotype Corsiva" size="4"> <a href="WeddingDetails.htm"><font color="#526949">
+<span style="text-decoration: none;">Wedding
+Details</span></font></a></font></p>
+<p><font color="#526949" face="Monotype Corsiva" size="4"> <font color="#526949"> <a href="WeddingParty.htm"><font color="#526949"> <span style="text-decoration: none;">Wedding
+Party</span></font></a></font></font></p>
+<p><font color="#526949" face="Monotype Corsiva" size="4"> <a href="Registry.htm"><font color="#526949"> <span style="text-decoration: none;">Registry</span></font></a></font></p>
+<p><font color="#526949" face="Monotype Corsiva" size="4"> <a href="Photos.htm"> <font color="#526949"><span style="text-decoration: none;">Photo Gallery</span></font></a></font></p>
+<p> <font color="#526949" face="Monotype Corsiva" size="4"> <a href="TravelDetails.htm"> <span style="text-decoration: none;">Travel Details</span></a></font></p>
+<p> <font color="#526949" face="Monotype Corsiva" size="4"> <a href="Maps.htm"><span style="text-decoration: none;">Maps</span></a></font></p>
+<p><font color="#526949" face="Monotype Corsiva" size="4"> <a href="ThingsToDo.htm"><span style="text-decoration: none;">Things
+to Do</span></a></font></p>
+<p><font color="#526949" face="Monotype Corsiva" size="4"> <a href="ContactUs.htm"><font color="#526949"> <span style="text-decoration: none;">Contact Us</span></font></a></font></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td align="left" height="105" valign="top" width="714"> &nbsp;
+<p><font color="#3a4b34"><b>Maps and
+Directions</b></font></p>
+<ul>
+<li><font color="#3a4b34"> <a target="_blank" href="images/AreaOverview.JPG">Overview
+Map</a> - This overview shows where the wedding location (Abita
+Quail Farm) and the wedding hotel (Holiday Inn - Covington) are in
+relation to the airport, rehearsal dinner location (Vintage Court) and
+the French Quarter hotel (Inn on Bourbon).&nbsp; </font></li>
+<li> <a target="_blank" href="ToCovingtonFromAirport.pdf">Directions to the north
+shore wedding hotels from the New Orleans Airport</a> </li>
+<li> <a target="_blank" href="ToCovingtonFromRamada.pdf">Directions to the north
+shore wedding hotels from the Ramada Inn on Bourbon</a></li>
+<li> <a target="_blank" href="WeddingDirections.pdf">Directions to the rehearsal
+dinner, wedding and reception</a> - These directions are from the
+Covington wedding hotels (Holiday Inn, Best Western, Marriott Courtyard
+and Hampton Inn).&nbsp; </li>
+<li> <a target="_blank" href="QFDirections.pdf">Directions
+to the wedding from I-12</a></li>
+</ul>
+<p><font color="#3a4b34"><b>Interactive
+Map</b></font></p>
+<p>Use your mouse to zoom in/out and move around the
+area.&nbsp; Click on a location icon for directions to/from that
+location.</p>
+<ul>
+<li> <a href="Javascript:moveMap(-90.08,30.44,5);">
+Center map over the North Shore wedding area</a></li>
+<li><a href="Javascript:moveMap(-90.066762,29.957345,2);">Center
+map over Downtown/French Quarter</a></li>
+<li><a href="Javascript:moveMap(-90.1,30.25,7);">Zoom
+out to show entire area</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" width="714">
+<div id="map" style="width: 600px; height: 500px;">&nbsp;</div>
+<script type="text/javascript">
+var gmarkers = [];
+var htmls = [];
+var to_htmls = [];
+var from_htmls = [];
+var i=0;
+/*function createMarker(point, desc) {
+var marker = new GMarker(point);
+GEvent.addListener(marker, "click",
+function() {
+marker.openInfoWindowHtml(desc);
+}
+);
+return marker;
+}
+*/
+// Create our "tiny" marker icon
+function getIcon (fname,size) {
+var icon = new GIcon();
+icon.image = fname;
+//icon.shadow = "www.visual.cz/ roadshow/inn_icon.gif";
+icon.iconSize = new GSize(size, size);
+//icon.shadowSize = new GSize(22, 20);
+icon.iconAnchor = new GPoint(size/2, size);
+icon.infoWindowAnchor = new GPoint(size/2, 0);
+return icon;
+}
+// A function to create the marker and set up the event window
+function createMarker(point,name,html,fname,size,addr) {
+var marker = new GMarker(point,getIcon(fname,size));
+// The info window version with the "to here" form open
+to_htmls[i] = '<strong>' + name + '</strong><br>' + html + '<br>Directions: <b>To here</b> - <a href="javascript:fromhere(' + i + ')">From here</a>' +
+'<br>Start address:<form action="http://maps.google.com/maps" method="get" target="_blank">' +
+'<input type="text" SIZE=40 MAXLENGTH=40 name="saddr" id="saddr" value="" /><br>' +
+'<INPUT value="Get Directions" TYPE="SUBMIT">' +
+'<input type="hidden" name="daddr" value="' +
+addr + "(" + name + ")" + '"/>';
+// point.y + ',' + point.x + "(" + name + ")" + '"/>';
+// The info window version with the "to here" form open
+from_htmls[i] = '<strong>' + name + '</strong><br>' + html + '<br>Directions: <a href="javascript:tohere(' + i + ')">To here</a> - <b>From here</b>' +
+'<br>End address:<form action="http://maps.google.com/maps" method="get"" target="_blank">' +
+'<input type="text" SIZE=40 MAXLENGTH=40 name="daddr" id="daddr" value="" /><br>' +
+'<INPUT value="Get Directions" TYPE="SUBMIT">' +
+'<input type="hidden" name="saddr" value="' +
+addr + "(" + name + ")" + '"/>';
+//point.y + ',' + point.x + "(" + name + ")" + '"/>';
+// The inactive version of the direction info
+html = '<strong>' + name + '</strong><br>' + html + '<br>Directions: <a href="javascript:tohere('+i+')">To here</a> - <a href="javascript:fromhere('+i+')">From here</a>';
+GEvent.addListener(marker, "click", function() {
+marker.openInfoWindowHtml('<div style="white-space:nowrap;">'+html+'</div>');
+});
+gmarkers[i] = marker;
+htmls[i] = html;
+i++;
+return marker;
+}
+// functions that open the directions forms
+function tohere(i) {
+gmarkers[i].openInfoWindowHtml('<div style="white-space:nowrap;">'+ to_htmls[i]+'</div>');
+}
+function fromhere(i) {
+gmarkers[i].openInfoWindowHtml('<div style="white-space:nowrap;">'+ from_htmls[i]+'</div>');
+}
+//<![CDATA[
+function moveMap(x,y,zoom)
+{
+var point = null;
+var marker = null;
+var map = new GMap(document.getElementById("map"));
+map.centerAndZoom(new GPoint(x,y), zoom); marker = new createMarker(new GPoint(-90.083462,30.438043), "Holiday Inn - Covington","","http://www.visual.cz/roadshow/inn_icon.gif",30,"501 N US-190, Covington, LA 70433");
+map.addOverlay(marker);
+marker = new createMarker(new GPoint(-90.083127,30.440209), "Best Western - Covington","","http://www.accommodationguide.com.au/images/Company/0-9999/Images/101.css.gif",30,"625 North Highway 190, Covington, LA 70433-8961");
+map.addOverlay(marker);
+marker = new createMarker(new GPoint(-90.094795,30.470876), "Marriott Courtyard - Covington","","http://robynanddan.com/home/images/marriott.gif",30,"101 Northpark Blvd, Covington, LA 70433");
+map.addOverlay(marker);
+marker = new createMarker(new GPoint(-90.106903,30.499788), "Vintage Court","Rehearsal Dinner","http://robynanddan.com/home/images/vintagecourt.gif",40,"LA-25 & US-190, Covington, LA 70435");
+map.addOverlay(marker);
+marker = new createMarker(new GPoint(-90.014709,30.491899), "Abita Quail Farm","Wedding & Reception","http://robynanddan.com/home/images/abita.gif",40,"23185 Hwy 435, Abita Springs, LA 70420");
+map.addOverlay(marker);
+marker = new createMarker(new GPoint(-90.258537,29.982549), "New Orleans International","","http://robynanddan.com/home/images/airport.gif",40,"New Orleans Airport");
+map.addOverlay(marker);
+marker = new createMarker(new GPoint(-90.066762,29.957345), "Ramada Inn On Bourbon","","http://robynanddan.com/home/images/ramada.gif",30,"541 Bourbon Street, New Orleans, LA 70130");
+map.addOverlay(marker);
+marker = new createMarker(new GPoint(-90.064079,29.950055), "Harrah's","","http://robynanddan.com/home/images/harrahs.gif",30,"8 Canal Street, New Orleans, LA 70130");
+map.addOverlay(marker);
+marker = new createMarker(new GPoint(-90.064911,29.958094), "Pat O'Brien's","","http://robynanddan.com/home/images/pats.gif",30,"718 St. Peter Street, New Orleans, LA 70116");
+map.addOverlay(marker);
+marker = null
+map.addControl(new GLargeMapControl());
+map.addControl(new GMapTypeControl());
+}
+//]]>
+</script>
+</td>
+</tr>
+<tr>
+<td align="left" height="52" valign="top" width="714"> &nbsp;</td>
+</tr>
+<tr>
+<td align="left" height="52" valign="top" width="714">
+<p align="center"><small><!--webbot bot="Navigation" s-orientation="horizontal" s-rendering="html" s-bar="Bars" s-btn-nml="&lt;A HREF=&quot;#URL#&quot; TARGET=&quot;#TARGET#&quot; STYLE=&quot;text-decoration: none;&quot;&gt;#LABEL#&lt;/A&gt;" s-btn-sel="#LABEL#" s-btn-sep="&amp;nbsp;|&amp;nbsp;" s-type="children" b-include-home="TRUE" b-include-up="FALSE" startspan --><!--webbot bot="Navigation" i-checksum="0" endspan --></small></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><i><small>This site was last updated
+<!--webbot bot="Timestamp" s-type="EDITED" s-format="%m/%d/%y" startspan -->11/25/06<!--webbot bot="Timestamp" i-checksum="13071" endspan -->
+</small></i></p>
+</body></html>
