@@ -2,67 +2,61 @@
 <html><head><title>Robyn and Dan's Wedding Site</title>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-33230608-1"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'UA-33230608-1');
+
+<!--
+// Set slideShowSpeed (milliseconds)
+var slideShowSpeed = 5000
+
+// Duration of crossfade (seconds)
+var crossFadeDuration = 3
+
+// Specify the image files
+var Pic = new Array() // don't touch this
+// to add more images, just continue
+// the pattern, adding to the array below
+
+Pic[0] = 'images/BabyPics1.jpg';
+Pic[1] = 'images/BabyPics2.jpg'; 
+Pic[2] = 'images/BabyPics3.jpg'; 
+Pic[3] = 'images/BabyPics4.jpg'; 
+Pic[4] = 'images/BabyPics5.jpg'; 
+
+// =======================================
+// do not edit anything below this line
+// =======================================
+
+var Dummyt
+var nCounterj = 0
+var PicLen = Pic.length
+
+var preLoad = new Array()
+for (nCounteri = 0; nCounteri < PicLen; nCounteri++){
+   preLoad[nCounteri] = new Image()
+   preLoad[nCounteri].src = Pic[nCounteri]
+}
+
+function runSlideShow(){
+   if (document.all){
+      document.images.SlideShow.style.filter='blendTrans(duration=2)'
+      document.images.SlideShow.style.filter='blendTrans(duration=crossFadeDuration)'
+      document.images.SlideShow.filters.blendTrans.Apply()
+   }
+   document.images.SlideShow.src = preLoad[nCounterj].src
+   if (document.all){
+      document.images.SlideShow.filters.blendTrans.Play()
+   }
+   nCounterj = nCounterj + 1
+   if (nCounterj > (PicLen-1)) nCounterj=0
+   Dummyt = setTimeout('runSlideShow()', slideShowSpeed)
+}
 </script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1"></script>
-<script type="text/javascript" src="include/infinite-rotator.js"></script>
-<style>
-rotating-item-wrapper {
-position: relative;
-width: 500px;
-height: 400px;
-}
-.rotating-item {
-display: none;
-position: absolute;
-top:50;
-left:100;
-width=500px;
-}
-</style>
 </head>
 <body>
-<div id="rotating-item-wrapper">
-<img src="images/BabyPics1.jpg" alt="Happily" class="rotating-item"><img src="images/BabyPics2.jpg" alt="Ever" class="rotating-item"><img src="images/BabyPics3.jpg" alt="After" class="rotating-item"><img src="images/BabyPics4.jpg" alt="Happens" class="rotating-item"><img src="images/BabyPics5.jpg" alt="Robyn and Dan Are Getting Married! May 20, 2006" class="rotating-item"></div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<img src="" name='SlideShow' alt="SlideShow"/>
+<script>
+runSlideShow();
+</script>
 <br>
 <br>
 <br>
