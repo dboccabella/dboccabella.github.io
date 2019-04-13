@@ -112,8 +112,8 @@
 
 <script>
 
-var Day1Link = "https://" + getQueryVariable("site") + ".sumtotaldemo.net/broker/Token/Saml11.ashx?username=sallyb&password=" + getQueryVariable("pw") + "&wa=wsignin1.0&wtrealm=https%3a%2f%2f" + getQueryVariable("site") + ".sumtotaldemo.net%2fcore%2f&wreply=https%3a%2f%2f" + getQueryVariable("site") + ".sumtotaldemo.net%2fcore%2fdash%2finitiatives%2F21%3FtargetUserId%3DE8604C8D00A35FA745B722C360003FE6";
-
+var link = document.getElementByID("Day1Link")
+link.href="https://" + getQueryVariable("site") + ".sumtotaldemo.net/broker/Token/Saml11.ashx?username=sallyb&password=" + getQueryVariable("pw") + "&wa=wsignin1.0&wtrealm=https%3a%2f%2f" + getQueryVariable("site") + ".sumtotaldemo.net%2fcore%2f&wreply=https%3a%2f%2f" + getQueryVariable("site") + ".sumtotaldemo.net%2fcore%2fdash%2finitiatives%2F21%3FtargetUserId%3DE8604C8D00A35FA745B722C360003FE6";
 var First100Link = "https://" + getQueryVariable("site") + ".sumtotaldemo.net/broker/Token/Saml11.ashx?username=sallyb&password=" + getQueryVariable("pw") + "&wa=wsignin1.0&wtrealm=https%3a%2f%2f" + getQueryVariable("site") + ".sumtotaldemo.net%2fcore%2f&wreply=https%3a%2f%2f" + getQueryVariable("site") + ".sumtotaldemo.net%2fcore%2fdevplan";
 
 var MatureLink = "https://" + getQueryVariable("site") + ".sumtotaldemo.net/broker/Token/Saml11.ashx?username=stuartb&password=" + getQueryVariable("pw") + "&wa=wsignin1.0&wtrealm=https%3a%2f%2f" + getQueryVariable("site") + ".sumtotaldemo.net%2fcore%2f&wreply=https%3a%2f%2f" + getQueryVariable("site") + ".sumtotaldemo.net%2fcore%2fgamification%2fleaderBoard";
@@ -125,7 +125,7 @@ var RetireLink = "https://" + getQueryVariable("site") + ".sumtotaldemo.net/brok
 
 </script>
 
-  <area shape="circle" coords="163,250,60" href=Day1Link target="_blank">
+  <area shape="circle" coords="163,250,60" id="Day1Link" href="" target="_blank">
   <area shape="circle" coords="334,250,60" href="https://c432.sumtotaldemo.net/broker/Token/Saml11.ashx?username=sallyb&password=Forward%2BHard&wa=wsignin1.0&wtrealm=https%3a%2f%2fc432.sumtotaldemo.net%2fcore%2f&wreply=https%3a%2f%2fc432.sumtotaldemo.net%2fcore%2Fdevplan" target="_blank">
   <area shape="circle" coords="480,250,60" href="https://c432.sumtotaldemo.net/broker/Token/Saml11.ashx?username=stuartb&password=Forward%2BHard&wa=wsignin1.0&wtrealm=https%3a%2f%2fc432.sumtotaldemo.net%2fcore%2f&wreply=https%3a%2f%2fc432.sumtotaldemo.net%2fcore%2fgamification%2fleaderBoard" target="_blank">
   <area shape="circle" coords="650,250,60" href="#">
