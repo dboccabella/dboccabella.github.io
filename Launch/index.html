@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+
+    <!-- icons CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,400italic,700italic,300italic' rel='stylesheet' type='text/css'>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    
+    <!-- Get Query Variable -->
+    <script src="https://supp-saux.sumtotaldemo.net/SA_UX/Tools/get-query-variable.js"></script>
+    
+    <!-- Parse Script -->
+    <script src="list_parse.js"></script>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="main.css">
+    <title></title>
+  <style> 
+
+
+      
+  </style>
+
+  <!-- Mobile viewport settings -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- Get parameter for url :
+        ?site=c###&pw=****
+    -->
+    
+</head>
+    
+<body>
+
+    <div class="wrapper">
+        
+        <div class="users">
+            <ul class="list-inline list-unstyled">
+                <li>
+                    <a alt="sallyb" href="" target="_blank">
+                        <div class="user-image no-flick">
+                            <img src="img/users/sallyb.png">
+                        </div>
+                        <div class="name no-flick">Sally Benton<br>Employee</div>
+                    </a>
+                </li>
+                
+                <li>
+                    <a alt="stuartb" href="" target="_blank">
+                        <div class="user-image no-flick">
+                            <img src="img/users/stuartb.png">
+                        </div>
+                        <div class="name no-flick">Stuart Bailey<br>Manager</div>
+                    </a>
+                </li>
+                
+                <li>
+                    <a alt="admin" href="" target="_blank">
+                        <div class="user-image no-flick">
+                            <img src="img/users/admin.png">
+                        </div>
+                        <div class="name no-flick">Heather Rose<br>System Admin</div>
+                    </a>
+                </li>
+            </ul>
+        </div>       
+        
+        
+        <div class="text-box">
+            <div class="text-popup default active">
+                <div class="text-area">
+                    <!-- Company Logo -->
+                    <img src="img/logo.png" style="padding: 0 0 15px 0">
+                   <!-- <div class="header-text">
+                        Develop<br>
+                        &nbsp;&nbsp;Lead<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;Achieve<br>
+                    </div>-->
+                    <div class="description-text">
+                      <!--  The award winning SumTotal Suite helps you to attract, know, mobilize, develop, progress and reward your workforce.
+						<br>-->
+						<a id="mobileLink" href="" class="mobileLink" target="_blank" >Launch mobile app</a>
+                    </div>
+
+                </div>
+                <div id="myCarousel" class="carousel fade">
+
+                  <!-- Wrapper for slides -->
+
+
+                  <div class="">
+				    
+                        <img src="img/new-bg.jpg" usemap="#Map" width="900"  style="border-radius: 20px;" >
+<map name="Map">
+<map name="Map">
+  <area shape="circle" coords="163,250,60" href="https://c432.sumtotaldemo.net/broker/Token/Saml11.ashx?username=sallyb&password=Forward%2BHard&wa=wsignin1.0&wtrealm=https%3a%2f%2fc432.sumtotaldemo.net%2fcore%2f&wreply=https%3a%2f%2fc432.sumtotaldemo.net%2fcore%2Finitiatives%2F21%3FtargetUserId%3DE8604C8D00A35FA745B722C360003FE6" target="_blank">
+  <area shape="circle" coords="334,250,60" href="https://c432.sumtotaldemo.net/broker/Token/Saml11.ashx?username=sallyb&password=Forward%2BHard&wa=wsignin1.0&wtrealm=https%3a%2f%2fc432.sumtotaldemo.net%2fcore%2f&wreply=https%3a%2f%2fc432.sumtotaldemo.net%2fcore%2Fdevplan" target="_blank">
+  <area shape="circle" coords="480,250,60" href="https://c432.sumtotaldemo.net/broker/Token/Saml11.ashx?username=stuartb&password=Forward%2BHard&wa=wsignin1.0&wtrealm=https%3a%2f%2fc432.sumtotaldemo.net%2fcore%2f&wreply=https%3a%2f%2fc432.sumtotaldemo.net%2fcore%2fgamification%2fleaderBoard" target="_blank">
+  <area shape="circle" coords="650,250,60" href="#">
+  <area shape="circle" coords="810,102,60" href="https://c432.sumtotaldemo.net/broker/Token/Saml11.ashx?username=admin&password=Forward%2BHard&wa=wsignin1.0&wtrealm=https%3a%2f%2fc432.sumtotaldemo.net%2fcore%2f&wreply=https%3a%2f%2fc432.sumtotaldemo.net%2fCore%2frequisition%2flist" target="_blank">
+  <area shape="circle" coords="810,250,60" href="https://c432.sumtotaldemo.net/Careers/search(slideout:job/30)?q=" target="_blank">
+</map>
+</map>
+                   
+
+                  </div>
+
+                </div> <!-- Carousel -->
+                
+            </div>
+        
+        </div>
+        
+       
+        
+    </div> <!-- wrapper -->
+    
+        <div id="other-users">
+            
+        </div>
+
+    
+    <!-- JavaScript Section -->
+  <script type="text/javascript">
+      
+    $(document).ready(function() { 
+        
+        $('#myCarousel').carousel({
+            interval: 8000,
+			pause: "false"
+        })
+        
+        
+    }); 
+
+  </script>
+
+</body>
+</html>
