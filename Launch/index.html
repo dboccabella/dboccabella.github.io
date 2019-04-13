@@ -117,20 +117,17 @@
 </script>
 <script>
 var AdvanceLink = "http://www.sumtotalsystems.com"
-var RetireLink = "http://www.sumtotalsystems.com"
+var RetireLink = "https://" + getQueryVariable("site") + ".sumtotaldemo.net/broker/Token/Saml11.ashx?username=admin&password=" + getQueryVariable("pw") + "&wa=wsignin1.0&wtrealm=https%3a%2f%2f" + getQueryVariable("site") + ".sumtotaldemo.net%2fcore%2f&wreply=https%3a%2f%2f" + getQueryVariable("site") + ".sumtotaldemo.net%2fCore%2frequisition%2flist";
 alert(RetireLink);
 </script>
 <map name="Map">
   <area shape="circle" coords="163,250,60" href="#" onclick="window.open(Day1Link);" target="_blank">
-  <area shape="circle" coords="334,250,60" href="#" onclick="window.open('http://www.google.com');" target="_blank">
-  <area shape="circle" coords="480,250,60" href="javascript:window.open('http://www.google.com');" target="_blank">
-  <area shape="circle" coords="650,250,60" href="javascript:alert('AdvanceLink='+AdvanceLink);" target="_blank">
+  <area shape="circle" coords="334,250,60" href="#" onclick="window.open(First100Link);" target="_blank">
+  <area shape="circle" coords="480,250,60" href="#" onclick="window.open(MatureLink);" target="_blank">
+  <area shape="circle" coords="650,250,60" href="#" onclick="window.open(AdvanceLink);" target="_blank">
   <area shape="circle" coords="810,102,60" href="#" onclick="window.open(RetireLink);" target="_blank">
   <area shape="circle" coords="810,250,60" href="https://c432.sumtotaldemo.net/Careers/search(slideout:job/30)?q=" target="_blank">
 </map>
-<script>
-  alert(MatureLink);
-</script>                  
 
 
                   </div>
