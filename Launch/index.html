@@ -107,6 +107,7 @@
   var MatureLink = "https://" + getQueryVariable("site") + ".sumtotaldemo.net/broker/Token/Saml11.ashx?username=stuartb&password=" + getQueryVariable("pw") + "&wa=wsignin1.0&wtrealm=https%3a%2f%2f" + getQueryVariable("site") + ".sumtotaldemo.net%2fcore%2f&wreply=https%3a%2f%2f" + getQueryVariable("site") + ".sumtotaldemo.net%2fcore%2fgamification%2fleaderBoard";
   var AdvanceLink = "https://" + getQueryVariable("site") + ".sumtotaldemo.net/broker/Token/Saml11.ashx?username=admin&password=" + getQueryVariable("pw") + "&wa=wsignin1.0&wtrealm=https%3a%2f%2f" + getQueryVariable("site") + ".sumtotaldemo.net%2fcore%2f&wreply=https%3a%2f%2f" + getQueryVariable("site") + ".sumtotaldemo.net%2fCore%2forganization";
   var RetireLink = "https://" + getQueryVariable("site") + ".sumtotaldemo.net/broker/Token/Saml11.ashx?username=admin&password=" + getQueryVariable("pw") + "&wa=wsignin1.0&wtrealm=https%3a%2f%2f" + getQueryVariable("site") + ".sumtotaldemo.net%2fcore%2f&wreply=https%3a%2f%2f" + getQueryVariable("site") + ".sumtotaldemo.net%2fCore%2frequisition%2flist";
+  var mobileLink = "https://" + getQueryVariable("site") + ".sumtotaldemo.net/Broker/Public/MobileAutoFillUrl.html?FillURL=true";
 </script>
 <map name="Map">
   <area shape="circle" coords="144,222,53" href="" onclick="window.open(Day1Link);" target="_blank">
@@ -115,7 +116,7 @@
   <area shape="circle" coords="578,222,53" href="javascript:window.open(AdvanceLink);" target="_blank">
   <area shape="circle" coords="720,91,53" href="javascript:window.open(RetireLink);" target="_blank">
   <area shape="circle" coords="720,222,53" href="https://c432.sumtotaldemo.net/Careers/search(slideout:job/30)?q=" target="_blank">
-  <area shape="circle" coords="720,320,40" href="" id="mobileLink" class="mobileLink" target="_blank">
+  <area shape="circle" coords="720,320,40" href="javascript:window.open(mobileLink);" target="_blank">
 </map>
 
 
