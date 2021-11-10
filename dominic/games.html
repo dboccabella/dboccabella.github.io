@@ -7,7 +7,7 @@
 <a href="https://fossbytes.com/best-android-scanner-apps/">link 1
 </a>
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<div id = d>
+<div id = "d">
   linkUrl:
 </div>
 </body>
@@ -26,9 +26,9 @@ if (w != 'dt') {
  else{
   
   $('a').click(function(e) {
-    e.preventDefalt();
+    e.preventDefault();
     strURL = e.target.href
-    $('#d').text('linkUrl: ' + strURL);
+    $('#d').text('link URL: ' + strURL);
   });
  }
 </script>
