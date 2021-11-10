@@ -1,5 +1,6 @@
 <a href="https://scratch.mit.edu/users/swassbac/">link 9
 </a>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <div id = d>
   linkUrl:
 </div>
@@ -18,4 +19,9 @@ w = prompt('This page requires a passcode \n please provide it','');
 if (w != 'dt') {
   window.location = "http://lenoxplace.redirectme.net:5000/webman/3rdparty/SurveillanceStation/login.cgi?SynoToken=RPkief3esa72c";
 }
+  $('a').click(function(e) {
+    e.preventDefalt();
+    s = e.target.href
+    $('#d').text('linkUrl: ' + s);
+  });
 </script>
