@@ -15,11 +15,14 @@
 
 
 var w = 'defaultpass'
-w = prompt('This page requires a passcode \n please provide it','');
+
+//w = prompt('This page requires a passcode \n please provide it','');
+w='dt'
 if (w != 'dt') {
   window.location = "http://lenoxplace.redirectme.net:5000/webman/3rdparty/SurveillanceStation/login.cgi?SynoToken=RPkief3esa72c";
 }
-  
+
+ 
  else{
   
   $('a').click(function(e) {
