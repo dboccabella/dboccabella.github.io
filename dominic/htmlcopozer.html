@@ -12,12 +12,15 @@
 $('#h').click(function (e){
  alert('Hello world!\b h')
  $('#o').html('<h1>thank you</h1>')
- $('#i').html(' <button  id = "r">say you are welcome  </button>')
+ $('#i').html(' <button  id = "r" onClick = "close_window()">say you are welcome  </button>')
  
 })
- $('#r').click(function (e){
-window.close();
-})
+ 
+function close_window() {
+  if (confirm("Close Window?")) {
+    close();
+  }
+}
 </script>
 
   
