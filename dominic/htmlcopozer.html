@@ -15,8 +15,26 @@
  })
  var mywin;
  function openWin() {
-   mywin = window.open("https://www.robynanddan.com", "Test Window");
- }
+   mywin = window.open("", "Test Window","width=200,height=100");
+  mywin.document.write(
+   '<button  id = "h">Click<br />me</button>'
+  +'<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>'
+ +'<button  id = "h">Click<br />me</button>
+
+ +'<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ +'<div id = "o">
+ +'</div>
+ +'<div id = "i">
+ +'</div>
+  +'<p id="demo"></p>
+
+ +'<script>
+  +'$('#h').click(function (e){
+  +'alert('Hello world!\b h')
+  +'$('#o').html('<h1>thank you</h1>')
+ +' })
+  +'}
+  );
  function closeWin() {
   mywin.close();
  }
