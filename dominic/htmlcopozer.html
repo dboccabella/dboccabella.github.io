@@ -18,7 +18,7 @@
  function openWin() {
   var w = prompt("width for window");
   var h = prompt("height for window");
-  mywin = window.open("", "Test Window","width="+w+",height="+h);
+  mywin = window.open("https://www.quora.com/How-can-I-open-a-private-window-in-Javascript", "Test Window","width="+w+",height="+h);
   mywin.document.write(
    '<button  id = "h">Click<br />me</button>'
  +'<div id = "o">'
@@ -31,7 +31,7 @@
  
  function closeWin() {
   mywin.close();
-  window.create({"url": url, "incognito": true}); 
+  window.create({"": url, "incognito": true}); 
  }
 </script>
 <button onclick="openWin()">Open Window</button>
