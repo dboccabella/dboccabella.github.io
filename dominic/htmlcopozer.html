@@ -13,20 +13,20 @@
  alert('Hello world!\b h')
  $('#o').html('<h1>thank you</h1>')
  })
+ 
  var mywin;
  function openWin() {
-   mywin = window.open("", "Test Window","width=200,height=100");
+  mywin = window.open("", "Test Window","width=200,height=100");
   mywin.document.write(
    '<button  id = "h">Click<br />me</button>'
-
  +'<div id = "o">'
  +'</div>'
  +'<div id = "i">'
  +'</div>'
-  +'<p id="demo"></p>'
-
-
+ +'<p id="demo"></p>'
   );
+ }
+ 
  function closeWin() {
   mywin.close();
  }
