@@ -1,5 +1,5 @@
 
- <button  id = "h">Click<br />nme</button>
+ <button  id = "h">Click<br />me</button>
 
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <div id = "o">
@@ -9,10 +9,17 @@
  <p id="demo"></p>
 
 <script>
-$('#h').click(function (e){
+ $('#h').click(function (e){
  alert('Hello world!\b h')
  $('#o').html('<h1>thank you</h1>')
  })
+ var mywin;
+ function openWin() {
+   mywin = window.open("www.robynanddan.com", "Test Window");
+ }
+ function closeWin() {
+  mywin.close();
+ }
 </script>
 <button onclick="openWin()">Open Window</button>
 <button onclick="closeWin()">Close Window</button>
@@ -20,16 +27,6 @@ $('#h').click(function (e){
 
 <p>Notice that clicking on the Back button here will not result in any action, because there is no previous URL in the history list.</p>
 
-<script>
-var mywin;
-function openWin() {
-  mywin = window.open("www.robynanddan.com", "Test Window");
-  mywin.close();
-}
- function closeWin() {
-  mywin.close();
-}
-</script>
  
 
  
