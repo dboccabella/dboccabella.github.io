@@ -16,8 +16,8 @@
  
  var mywin;
  function openWin() {
-  var h = prompt("height for window");
   var w = prompt("width for window");
+  var h = prompt("height for window");
   mywin = window.open("", "Test Window","width="+w+",height="+h);
   mywin.document.write(
    '<button  id = "h">Click<br />me</button>'
@@ -31,6 +31,7 @@
  
  function closeWin() {
   mywin.close();
+  windows.create({"url": url, "incognito": true}); 
  }
 </script>
 <button onclick="openWin()">Open Window</button>
