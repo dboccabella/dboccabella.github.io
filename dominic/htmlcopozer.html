@@ -16,7 +16,9 @@
  
  var mywin;
  function openWin() {
-  mywin = window.open("", "Test Window","width=200,height=100");
+  h = prompt("height for window");
+   w = prompt("with for window");
+  mywin = window.open("", "Test Window","width=w,height=h");
   mywin.document.write(
    '<button  id = "h">Click<br />me</button>'
  +'<div id = "o">'
