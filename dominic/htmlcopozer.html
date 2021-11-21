@@ -13,7 +13,10 @@
  alert('Hello world!\b h')
  $('#o').html('<h1>thank you</h1>')
  })
- 
+        window.addEventListener('beforeunload', function (e) {
+            e.preventDefault();
+            e.returnValue = '';
+        });
  var mywin;
  function openWin() {
   var w = prompt("width for window");
@@ -34,7 +37,7 @@
  
  function closeWin() {
   mywin.close();
-  window.create({"https://www.quora.com/How-can-I-open-a-private-window-in-Javascript": url, "incognito": true}); 
+
  }
 </script>
 <button onclick="openWin()">Open Window</button>
