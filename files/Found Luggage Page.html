@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
     <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const urlParams = new URLSearchParams(window.location.search);
+    document.addEventListener("DOMContentLoaded", () => {         
+ const urlParams = new URLSearchParams(window.location.search);
        
         if (urlParams.get('color') === 'dr') {
             // LSU Colors: Purple (#461D7C) and Gold (#FDD023)
@@ -55,7 +55,20 @@
                 ownerName.innerHTML = 'Dominic Boccabella';
             }
         }
-    });
+       else if (urlParams.get('color') === 'r') {
+ 
+   
+            // Change owner name
+            const ownerName = document.querySelector('.owner-name');
+            if (ownerName) {
+                ownerName.innerHTML = 'Robyn Leboeuf';
+            }
+        }else{
+  const ownerName = document.querySelector('.owner-name');
+            if (ownerName) {
+                ownerName.innerHTML = 'Dan Boccabella';
+            }}
+   });
 </script>
 
     <style>
